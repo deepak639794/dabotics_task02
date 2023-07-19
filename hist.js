@@ -1,6 +1,6 @@
 let historybutton = document.getElementById('historybutton');
 let history = document.getElementById('history');
-let bar1 = document.getElementById('bar1');
+let bar01 = document.getElementById('bar1');
 let bar2 = document.getElementById('bar2');
 
 function showHistory() {
@@ -9,7 +9,7 @@ function showHistory() {
 
     history.innerHTML = '';
 
-    bar1.style.display = 'block';
+    bar01.style.display = 'block';
     bar2.style.display = 'block';
     if (len === 0) {
         let historyItem = document.createElement('div');
@@ -34,9 +34,9 @@ historybutton.addEventListener('click', showHistory);
 
 function hide(){
     history.style.display = 'none';
-    bar1.style.display = 'none';
+    bar01.style.display = 'none';
     bar2.style.display = 'none';
 }
 
-bar1.addEventListener('click', hide);
+bar01.addEventListener('click', hide);
 bar2.addEventListener('click', hide);
